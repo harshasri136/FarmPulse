@@ -1,0 +1,104 @@
+
+name: farmpulse
+description: "FarmPulse - Smart Farm Management Flutter Application"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI and Icons
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.3.2
+
+  # Local Database
+  sqflite: ^2.4.2
+  sqflite_common: ^2.5.6
+  sqflite_common_ffi_web: ^1.2.0
+  path: ^1.9.1
+  path_provider: ^2.1.5
+
+  # Backend
+  supabase_flutter: ^2.10.3
+
+  # State and Local Storage
+  shared_preferences: ^2.5.3
+  connectivity_plus: ^6.1.5
+
+  # Charts and Analytics
+  fl_chart: ^1.1.1
+
+  # Date Formatting and IDs
+  intl: ^0.20.2
+  uuid: ^4.5.1
+
+  # Images
+  image_picker: ^1.2.0
+
+  # Weather API
+  http: ^1.5.0
+
+  # Reminders and Notifications
+  flutter_local_notifications: ^19.4.2
+  timezone: ^0.10.1
+
+  # Reports
+  csv: ^8.0.0
+  pdf: ^3.12.0
+  printing: ^5.14.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.6
+  flutter_launcher_icons: ^0.14.4
+
+# Add this section here
+dependency_overrides:
+  image: 4.8.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+
+# App launcher icon
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/pulse fa.png"
+
+  adaptive_icon_background: "#F5F8F4"
+  adaptive_icon_foreground: "assets/icons/pulse fa.png"
+
+  web:
+    generate: true
+    image_path: "assets/icons/pulse fa.png"
+    background_color: "#F5F8F4"
+    theme_color: "#176B45"
+
+# Splash screen
+flutter_native_splash:
+  color: "#F5F8F4"
+  image: "assets/images/pulsefarm.png"
+
+  android: true
+  ios: true
+  web: true
+  fullscreen: true
+
+  android_12:
+    color: "#F5F8F4"
+    image: "assets/images/pulsefarm.png"
+    icon_background_color: "#F5F8F4"
